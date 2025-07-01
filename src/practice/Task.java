@@ -3,16 +3,21 @@ package practice;
 import java.time.LocalDate;
 
 public class Task {
-  LocalDate date;
-  String content;
+  private LocalDate date;
+  private String content;
 
   public Task(LocalDate date, String content) {
     this.date = date;
     this.content = content;
   }
+  
+//ゲッター（他のクラスから date を読み取るために必要）
+ public LocalDate getDate() {
+   return this.date;
+ }
 
   @Override
   public String toString() {
-    return date + " " + content;
+    return this.date + this.content;
   }
 }
