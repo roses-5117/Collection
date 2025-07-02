@@ -15,6 +15,10 @@ public class Task {
  public LocalDate getDate() {
    return this.date;
  }
+ 
+ public String getContent() {
+	   return this.content;
+	 }
 
   @Override
   public String toString() {
